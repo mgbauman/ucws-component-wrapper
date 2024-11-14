@@ -9,6 +9,7 @@ class UcwsWebComponentWrapper extends LitElement {
 
   static styles = css`
     :host {
+      --ucws-test-background-color: #ededed;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -41,6 +42,7 @@ class UcwsWebComponentWrapper extends LitElement {
 
     .component-wrapper slot {
       display: flex;
+      justify-content: center;
       gap: 30px;
       color: #3d3d3d;
       border-color: #3d3d3d;
@@ -54,16 +56,6 @@ class UcwsWebComponentWrapper extends LitElement {
 
   render() {
     return html`
-
-
-      <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
-        <meta name="Description" content="Put your description here.">
-        <base href="/">
-        <title>UCWS Component Wrapper</title>
-      </head>
-
       <body>
         <main>
           <div class="logo"><img alt="open-wc logo" src=${ucLogo}/></div>

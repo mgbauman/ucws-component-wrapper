@@ -16,8 +16,8 @@ class UcwsWebComponentWrapper extends LitElement {
       justify-content: flex-start;
       font-size: calc(10px + 2vmin);
       color: #1a2b42;
-      max-width: 960px;
       margin: 0 auto;
+      font-family: sans-serif;
       text-align: center;
       background-color: var(--ucws-test-background-color);
     }
@@ -39,7 +39,7 @@ class UcwsWebComponentWrapper extends LitElement {
       margin-left: 5px;
     }
 
-    .component-wrapper {
+    .component-wrapper slot {
       display: flex;
       gap: 30px;
       color: #3d3d3d;
